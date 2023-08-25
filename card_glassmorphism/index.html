@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nike</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <img src="img/jordan1.png" alt="Nike Air Jordan One">
+                <h1>Air Jordan 1 – Blue Chill</h1>
+                <p>Diese Silhouette veränderte die Welt der Schuhe bei ihrem Debüt im Jahr 1985 vollkommen. Der Schuh ist eine Hommage an Michael Jordans Anfänge bei North Carolina und feiert das NBA All-Star-Spiel in Charlotte. Das Obermaterial besteht aus Lackleder und die Farbgebung "Blue Chill" erinnert an den typischen blauen Farbton North Carolinas.</p>
+                <button class="purchase_btn" onclick="purchase_error()">Purchase - 189 $</button>
+                <p id="error"></p>
+            </div>
+        </div>
+     </div>
+
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".card"),{
+		max: 5,
+		speed: 500,
+        glare: true,
+        "max-glare": 0.3,
+	});
+    </script>
+</body>
+</html>
